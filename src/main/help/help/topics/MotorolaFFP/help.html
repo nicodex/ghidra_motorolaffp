@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+  <HEAD>
+    <META http-equiv="Content-Language" content="en-us">
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <TITLE>Motorola Fast Floating Point (MFFP)</TITLE>
+    <LINK rel="stylesheet" type="text/css" href="../../shared/Frontpage.css">
+  </HEAD>
+  <BODY>
+    <H1><A name="Overview"></A>Motorola Fast Floating Point (MFFP)</H1>
+    <P>
+      The <B>MotorolaFFP</B> extension adds a new
+      built-in data type <A href="#DataType">MotorolaFFP</A>
+      for the Motorola Fast Floating Point (MFFP) format.
+    </P>
+    <P>
+      The <B>MotorolaFFP</B> extension also provides a new
+      <A href="#ConvertToEquate">ConvertToMotorolaFfpEquate</A>&nbsp;plug-in,
+      which allows you to convert scalar operands to MotorolaFFP equates
+      in the <B>Listing</B> window of the <B>CodeBrowser</B>.
+    </P>
+    <P>
+      This format is used in the <B>MC68343 Floating Point Firmware</B>,
+      which is included in the Commodore <B>Amiga ROM Operating Systems</B>
+      from the very beginning and part of the <B>mathffp.library</B>.
+    </P>
+    <P>
+      <B>NOTE:</B> The Amiga ROM Kernel Reference Manual documents the
+      exponent to be stored as two's complement value in excess-64 format.
+      If you handle the encoded exponent as an unsigned value, the bias is 65.
+    </P>
+    <H2 align="center"><A name="DataType"></A>DataType MotorolaFFP</H2>
+    <P>
+      Installing the MotorolaFFP extension adds a new built-in data type:<BR>
+      <IMG src="images/MotorolaFFP-DataTypeManager.png" border="0" alt="">
+    </P>
+    <P>
+      If you use the <B>MotorolaFFP</B> data type in a shared project/program,
+      all users have to install the MotorolaFFP extension to avoid getting a
+      <B>-MISSING-MotorolaFFP</B> data type in the program's data type archive.
+    </P>
+    <H2 align="center"><A name="ConvertToEquate"></A>Convert to Equate</H2>
+    <H3>Convert MotorolaFFP</H3>
+    <P>
+      With the enabled <B>ConvertToMotorolaFfpEquate</B>&nbsp;plug-in,
+      you can convert scalar operands in the <B>Listing</B> window of the
+      <B>CodeBrowser</B> into equates:<BR>
+      <IMG src="images/MotorolaFFP-CodeView-Convert.png" border="0" alt="">
+    </P>
+    <H3>Remove Equate</H3>
+    <P>
+      Deleting the equate is provided by Ghidra's <B>Equate</B>&nbsp;plug-in.
+    </P>
+    <H3>Plug-in activation</H3>
+    <P>
+      If you missed the <B>New Plugins Found!</B> dialog,
+      you can enable/disable the <B>ConvertToMotorolaFfpEquate</B>&nbsp;plug-in
+      with the menu entry <B>File / Configure...</B> in the <B>CodeBrowser</B>.
+      The plug-in can by found in the <B>Miscellaneous</B> category.<BR>
+      <IMG src="images/MotorolaFFP-Configure-Tool.png" border="0" alt="">
+    </P>
+  </BODY>
+</HTML>
