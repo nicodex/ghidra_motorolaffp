@@ -1,4 +1,4 @@
-# Motorola Fast Ploating Point (MFFP) Ghidra extension
+# Motorola Fast Floating Point (MFFP) Ghidra extension
 
 The `MotorolaFFP` Ghidra extension adds a new built-in data type.
 It also provides a plug-in to convert scalar operands to equates.

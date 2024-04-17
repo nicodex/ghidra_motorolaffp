@@ -29,7 +29,7 @@ import ghidra.framework.plugintool.util.PluginStatus;
 	packageName = MiscellaneousPluginPackage.NAME,
 	category = PluginCategoryNames.CODE_VIEWER,
 	shortDescription = "Convert to MotorolaFFP equate",
-	description = "This provide an action for converting scalar operands to MotorolaFFP equates.",
+	description = "Provides an action for converting scalar operands to MotorolaFFP equates.",
 	servicesRequired = { CodeViewerService.class }
 )
 //@formatter:on
