@@ -47,3 +47,6 @@ else {
 }
 //----------------------END "DO NOT MODIFY" SECTION-------------------------------
 
+tasks.withType(JavaCompile) {
+  options.compilerArgs << "-Xlint:unchecked"
+}

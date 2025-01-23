@@ -51,8 +51,9 @@ To create the build for other Ghidra versions:
 * Download and extract the target version of [Ghidra][ghidra]
 
 ##### Install build tools:
-* Install the JDK for this Ghidra version ([JDK 17 64-bit][jdk17])
-* Install the Gradle tool for this Ghidra version ([Gradle 7.3+][gradle])
+* Install the JDK for this Ghidra version ([JDK 21 64-bit][jdk21])
+* Install the Gradle tool for this Ghidra version ([Gradle 8.5+][gradle])
+* Install Python3 with bundled pip for this Ghidra version ([Python3 3.9-3.12][python3])
 
 ##### Download and extract the source:
 [Download from GitHub][main]
@@ -122,8 +123,9 @@ For details read the [license file][license].
 [releases]: https://github.com/nicodex/ghidra_motorolaffp/releases
 [installguide]: https://ghidra-sre.org/InstallationGuide.html#GhidraExtensionNotes
 [help]: http://htmlpreview.github.io/?https://github.com/nicodex/ghidra_motorolaffp/blob/main/src/main/help/help/topics/MotorolaFFP/help.html
-[jdk17]: https://adoptium.net/temurin/releases
+[jdk21]: https://adoptium.net/temurin/releases
 [gradle]: https://gradle.org/releases/
+[python3]: https://www.python.org/downloads/
 [main]: https://github.com/nicodex/ghidra_motorolaffp/archive/refs/heads/main.zip
 [eclipse]: https://www.eclipse.org/downloads/packages/
 [license]: LICENSE
